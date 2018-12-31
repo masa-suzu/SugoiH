@@ -14,7 +14,7 @@ atoi :: String -> Int
 atoi r = read r :: Int
 
 identify :: (Enum e) => e -> e
-identify e = pred (succ e )
+identify e = pred (succ e)
 
-inc ::  Num n => n -> n
+inc :: Num n => n -> n
 inc n = n + 1
