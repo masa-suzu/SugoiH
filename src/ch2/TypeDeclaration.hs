@@ -1,2 +1,2 @@
-sum' :: (Int,Int,Int) -> Int
-sum' (x,y,z) = x + y + z
+sum' :: (Int, Int, Int) -> Int
+sum' (x, y, z) = x + y + z
