@@ -49,3 +49,6 @@ and' xs = foldr (&&) True xs
 
 and'' :: [Bool] -> Bool
 and'' xs = foldl (&&) True xs
+
+eighty :: Int
+eighty = sum $ filter (> 10) $ map (* 2) [2 .. 10]
