@@ -43,3 +43,9 @@ numLongChains = length (filter' isLong (map' chain [1 .. 100]))
 numLongChains' :: Int
 numLongChains' =
   length (filter' (\xs -> length xs > 15) (map' chain [1 .. 100]))
+
+and' :: [Bool] -> Bool
+and' xs = foldr (&&) True xs
+
+and'' :: [Bool] -> Bool
+and'' xs = foldl (&&) True xs
