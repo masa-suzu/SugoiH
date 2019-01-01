@@ -52,3 +52,15 @@ and'' xs = foldl (&&) True xs
 
 eighty :: Int
 eighty = sum $ filter (> 10) $ map (* 2) [2 .. 10]
+
+productMinusThree :: (Num a) => a -> a
+productMinusThree = negate . (* 3)
+
+foo :: Double
+foo = sum . replicate 5 $ max 6.7 8.9
+
+sum' :: (Num a) => [a] -> a
+sum' xs = foldl (+) 0 xs
+
+sum'' :: (Num a) => [a] -> a
+sum'' = foldl (+) 0
